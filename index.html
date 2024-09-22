@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>
+        Poemario
+    </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .espacio-entre-parrafos {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="menu" src="img/menu.svg" alt="">
+        <nav class="menu navegacion" <a href="#principal">principal</a>
+            <a href="#páginas">páginas</a>
+            <a href="#mensaje">mensaje</a>
+            <a href="#titulos">titulos</a>
+            <a href="#galeria">galeria</a>
+            <a href="#agradecimientos">agradecimientos</a>
+            <a href="#contacto">contacto</a>
+        </nav>
+        <section class="seccion_header" id="principal">
+            <h1>
+                Absurdos y entramados
+            </h1>
+            <h3>Pedazos de poemario</h3>
+            <h5>Por Lizeth Ruaro</h5>
+        </section>
+    </header>
+    <main>
+        <section class="seccion_general" id="mensaje">
+            <h2>
+                MENSAJE
+            </h2>
+            <p>
+                ¿Qué se siente sentir menos? Mi madre solía decirme que siento mucho, y desbordaba. Cada emoción es
+                completamente gigante, incluso desastroza. Así que aprendí a desbarajarlas, a través del lenguaje
+                escrito, cada vez el sentir se hacía más específico. Sé lo que se siente, cómo se siente y la forma en
+                la que combina.
+            </p>
+            <p>
+                Te abro estas páginas, te doy mis palabras.
+            </p>
+        </section>
+        <section class="seccion_general" id="páginas">
+            <MDN Reference></MDN>
+            <h2> PÁGINAS </h2>
+            <p> Comienza a leer, mira mi corazón deshilacharse sinceramente ante tus ojos y guárdalo entre tus dientes.
+            </p>
+        </section>
+        <h5> Escucha cómo suena mi corazón </h5>
+        <audio id="audioPlayer" controls>
+            <source src="audio/heart.wav" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <!-- <div>
+            <button onclick="playAudio()">Play</button>
+            <button onclick="pauseAudio()">Pause</button>
+            <button onclick="stopAudio()">Stop</button>
+        </div>
+        <!-- <section class="seccion_general" id="titulo poema">
+            <h2> I. </h2>
+            <h2> Pensamiento </h2>
+            <p> Pensé en nada, y en llenarte los bolsillos de notas. En abrazos fuertes y dolores que palpitan, en
+                tierras blandas y perderte cuando el agua se agita. </p>
+        </section>-->
+        <section class="seccion_general" id="titulos">
+            <h2> Desarrollo
+            </h2>
+            <div>
+                <p> </p> <br>
+                <h2> I. </h2>
+                <h3> Pensamiento </h3>
+                <p> Pensé en nada, y en llenarte los bolsillos de notas. En abrazos fuertes y dolores que palpitan,
+                    en
+                    tierras blandas y perderte cuando el agua se agita. </p>
+                <p> Pensé en absurdos y animados, en cables entramados, en ser valiente, ir contra corriente. En la
+                    talla de
+                    tu ropa y la mía, la forma en la que combinaría. </p>
+                <p> En hablar más y sentir menos, en viceversa con la herida abierta, en abrir una rendija a la
+                    puerta. Tus
+                    palabras fueron el hacha que abrió un agujero, violento ante el concreto. </p>
+                <p> La vergüenza se mezcla con el anhelo y el miedo al sufrimiento. ¿Qué se siente sentir menos?. Lo
+                    dócil
+                    se disuelve como azúcar en el agua, el cristal agrieta como presa ante el tiempo, y los días
+                    pasan. </p>
+                <p> ¿Te quiero más o que quiero menos? ¿Te quiero? </p>
+            </div>
+            <!-- <h2 style="text-align:center">Slideshow Gallery</h2>
+             Container for the image gallery -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img\nota.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img\agua.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img\metal.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img\agujero.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img\azucar.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img\vidrio.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img\nota.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="nota">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\agua.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="agua">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\metal.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="metal">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\agujero.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="agujero">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\azucar.jpg" style="width:100%" onclick="currentSlide(5)"
+                            alt="azucar">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\vidrio.jpg" style="width:100%" onclick="currentSlide(6)"
+                            alt="vidrio">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p> </p> <br>
+                <h2> II. </h2>
+                <h3> Sentimiento </h3>
+                <p> Mi corazón está abierto, has hecho una pequeña herida, punzante en el tejido descubierto. </p>
+                <p> Lo has cuidado para no sangrar, arremolinada masa de puntadas, palpitante, brillante y turbio a
+                    la vista. Solo tú lo pudiste mirar.</p>
+                <p> Lo sentí partir, agujerarse, abrirte un espacio. Caer de mi pecho al estómago y al vacío,
+                    aspirar en busca de oxígeno.</p>
+                <p> Expandido, caído y encarnado, inmerso en mis entrañas engrapadas, taladrado por tus arañas.</p>
+                <p> Respira la acidez de su agonía, la pesadez del sentirte todavía. Habrás de salivar en la llaga
+                    para intentar curarla. </p>
+                <p> Guardate en ese espacio, con las uñas quiero sentirte aferrado. Hacerme sentir me ha acallado,
+                    has expandido el corazón entallado. </p>
+                <p> Entramado, adolorido y agitado. Partido a heridas, expandido a pedazos. Guárdalo en el cristal
+                    que me has clavado, es tuyo aunque no te lo hayas ganado. </p>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img\rojo.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img\aguja.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img\corazon.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img\aire.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img\entraña.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img\filo.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img\rojo.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="rojo">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\aguja.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="aguja">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\corazon.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="corazón">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\aire.png" style="width:100%" onclick="currentSlide(4)"
+                            alt="aire">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\entraña.png" style="width:100%" onclick="currentSlide(5)"
+                            alt="Entraña">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\filo.png" style="width:100%" onclick="currentSlide(6)"
+                            alt="filo">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p> </p> <br>
+                <h2> III. </h2>
+                <h3> Lección </h3>
+                <p> Tú serías la próxima herida, empujándome gentilmente hacia afuera. Como un clavo en el cuello,
+                    un hoyo en el pecho. </p>
+                <p> De la honestidad más desgraciada, la prevención más desquiciada. Era suave, besaba sin vacío,
+                    todo lo vertiste en mi oído. </p>
+                <p> Te sentí, con anhelo palpitante, desnudez emocional estimulante. Has entrado como aguja,
+                    dejándome adolorida. </p>
+                <p> Evitaba que me miraras, vergonzosa y herida. Coraza retirada, envolví mi corazón en papel
+                    estraza. Quería que te lo llevaras a tu casa.</p>
+                <p> No me toques, no, ni con la mirada. Siendo suave, acariciándome la piel perfumada. Jugueteando
+                    con los lazos, que del corazón estoy atada. </p>
+                <p> Con una rozadura lo cierto se revela, el aroma, mirada canela. Atate a mis límites, que no
+                    rebasaré los tuyos. Déjame descansar en tus brazos del barullo. </p>
+                <p> En las promesas no has de confiar, en las premuras habrás de aclarar. Esta es una prueba de
+                    lección aprendida, todo por atreverme a querer ser querida. </p>
+                <p> La realidad me ha golpeado con una rosa, palmeado la espalda mientras decía “no puedes, pero
+                    intenta, solloza”. No ha brotado, no ha caído. Aunque en la llaga tu dedo con suavidad has
+                    hundido. </p>
+                <p> Mi corazón se ha fortalecido, y ahora te miro con cierto alivio. Yo noto, anoto suspiro. </p>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img\clavo.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img\estraza.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img\lazo.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img\canela.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img\metal.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img\gota.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img\clavo.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="clavo">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\estraza.png" style="width:100%" onclick="currentSlide(2)"
+                            alt="estraza">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\lazo.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="lazo">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\canela.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="canela">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\metal.jpg" style="width:100%" onclick="currentSlide(5)"
+                            alt="metal">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\gota.jpg" style="width:100%" onclick="currentSlide(6)"
+                            alt="gota">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p> </p> <br>
+                <h2> Te contaré mi pasado </h2>
+
+                <p> Ya llegará alguien que quiera conocer (me), <br>
+                    y viendo la curiosidad emanar de su rostro, <br>
+                    mi cabeza descansando en su hombro, <br>
+                    me llenará de (su) emoción decirle. </p>
+
+                <p>No he tenido quince años, <br>
+                    pero te puedo contar mi pasado, <br>
+                    que si mi corazón ya he entregado, <br>
+                    a ti todo te ha tocado, </p>
+
+                <p>no habrás conocido a mi bisabuela, <br>
+                    pero sabrás todo lo que sé de ella, <br>
+                    como la miro cuando el cielo surca una estrella <br>
+                    y que tendrías un apodo si se hubiera quedado despierta, </p>
+
+                <p> que he crecido, <br>
+                    y el corazón de lugar se me ha movido, <br>
+                    sí, que definitivamente pensé que se había ido, <br>
+                    hasta que de vuelta me lo has traído, </p>
+
+                <p>te contaré, que del árbol de mi madre cortaba peras, <br>
+                    y de aquella vez que casi me cayera, <br>
+                    que mi padre a trepar árboles me enseñaba, <br>
+                    y que para conseguirlo había que tener maña. </p>
+
+                <p>Mi mente ha airado, <br>
+                    desde que tenía dieciocho años, <br>
+                    No podré contarte todo lo que ha pasado, <br>
+                    pero mis recuerdos en tu mente irás recolectando. </p>
+
+                <p>Así como estoy construida, <br>
+                    un cuarto lleno de repisas, <br>
+                    que si con tu mano acaricias, <br>
+                    descubrirás que siempre tiene noticias. </p>
+
+                <p> Te diré lo que ha pasado, <br>
+                    lo mucho que he temido, <br>
+                    lo que he aprendido, <br>
+                    y cuánto me ha dolido. </p>
+                <p> </p>
+                Si he querido decirte, <br>
+                no es porque me convenciste, <br>
+                es porque viniste, <br>
+                siempre había tenido fe de que existes. </p>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img\hombro.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img\corazon2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img\estrella.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img\peral.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img\airado.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img\repisa.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img\hombro.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="hombro">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\corazon2.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="corazon2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\estrella.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="estrella">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\peral.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="peral">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\airado.jpg" style="width:100%" onclick="currentSlide(5)"
+                            alt="airado">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\repisa.jpg" style="width:100%" onclick="currentSlide(6)"
+                            alt="repisa">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p> </p> <br>
+                <h2> Amigo, </h2>
+                <p> Yo sé que tú sabes, <br>
+                    Que me ha rozado la mente, <br>
+                    Que me ha pasado por las manos,</p>
+
+                <p> Que me ha acariciado la frente. <br>
+                    La idea de perderte como amigo, <br>
+                    Para ganarte como amante.</p>
+
+                <p> Que he anhelado la agilidad de tus manos, <br>
+                    Pues no me eres indiferente, <br>
+                    Pero nos conformamos.</p>
+
+                <p> Y es que la pérdida es grande. <br>
+                    Un “te quiero” no lo arriesgo; <br>
+                    Por lo que no se sabe si se tiene.</p>
+
+                <p> Es que he perdido amigos, <br>
+                    Que no han sido eso solamente. <br>
+                    No es un lujo, es un desperdicio.</p>
+
+                <p> Pero cuando alguien se te haga vicio, <br>
+                    No me la muestres, <br>
+                    No quiero emitir un juicio. </p>
+
+                <p> Cuando tengan un niño, <br>
+                    No te atrevas a invitarme. <br>
+                    Quizá, te diré que a ella envidio. </p>
+
+                <p> Y si el tiempo no apremia querré que sea mío, <br>
+                    Porque no es incesante, <br>
+                    Amigo, amor mío. </p>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/manos.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/vicio.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/love.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/corazones.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/ultrasonido.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/amor.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img/manos.png" style="width:100%" onclick="currentSlide(1)"
+                            alt="manos">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/vicio.png" style="width:100%" onclick="currentSlide(2)"
+                            alt="vicio">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/love.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="love">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/corazones.png" style="width:100%" onclick="currentSlide(4)"
+                            alt="corazones">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/ultrasonido.png" style="width:100%" onclick="currentSlide(5)"
+                            alt="ultrasonido">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/amor.png" style="width:100%" onclick="currentSlide(6)"
+                            alt="amor">
+                    </div>
+                </div>
+            </div>
+            <!-- <h2> Galería </h2> -->
+        </section>
+        <section class="seccion_general" id="galeria">
+            <!-- <h2> Galería </h2>-->
+            <!--<img class="cerezas" src="img\cherry.jpg">
+            <img class="diamantina" src="img\diamantina.jpg">
+            <img class="granada" src="img\granada.jpg">
+            <img class="otra" src="img\otra.jpg">-->
+            <!-- <div class="gallery-container">
+                <button class="gallery-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="gallery">
+                    <img src="img\andre1.jpg" alt="cherry">
+                    <img src="img\andre2.jpg" alt="Imagen 2">
+                    <img src="img\granada.jpg" alt="Imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+            <!-- </div>
+                <button class="gallery-button next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <script>
+                let currentIndex = 0;
+
+                function changeSlide(n) {
+                    currentIndex += n;
+                    showSlide(currentIndex);
+                }
+
+                function showSlide(index) {
+                    const gallery = document.querySelector('.gallery');
+                    const slides = document.querySelectorAll('.gallery img');
+                    const totalSlides = slides.length;
+
+                    if (index >= totalSlides) {
+                        currentIndex = 0;
+                    } else if (index < 0) {
+                        currentIndex = totalSlides - 1;
+                    }
+
+                    const transformValue = -100 * currentIndex + '%';
+                    gallery.style.transform = 'translateX(' + transformValue + ')';
+                }    
+        </section >-->
+            <h2>Poemas sin rostro </h2>
+            <p>Aquellos que inspiraron mis palabras</p>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img\pensamiento.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img\sentimiento.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/rosas.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img\tecontaremipasado.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img\amigo.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/cubos.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img\pensamiento.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="pensamiento">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\sentimiento.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="sentimiento">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/rosas.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="rosas">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\tecontaremipasado.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="te contaré mi pasado">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img\amigo.jpg" style="width:100%" onclick="currentSlide(5)"
+                            alt="amigo, amor mio">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/cubos.jpg" style="width:100%" onclick="currentSlide(6)"
+                            alt="cubos">
+                    </div>
+                </div>
+            </div>
+            <section class="seccion_general" id="dedicados a">
+                <h3>
+                    Agradecimientos
+                </h3>
+                <div class="subseccion" id="agradecimientos">
+                    <img scr="img\lemonade-monochromatic.svg">
+                </div>
+                <p>
+                    A todas las personas que me hacen sentir, que me escuchan quejarme, que no se cansan de mis
+                    historias, o
+                    lo hacen pero las escuchan de cualquier manera. A las que cuidan de mis sentimientos y me ofrecen un
+                    consejo. A las que me rompen y no me reparan.
+                </p>
+            </section>
+    </main>
+</body>
+<footer>
+    <section class="seccion_general" id="contacto">
+        <h4> por Lizeth Ruaro </h4>
+        <h6>
+            Contacto
+        </h6>
+        <section class="redes-sociales" id="r-s">
+            <!--<a href="./" class="icono-red-social" id="instagram">
+                <i class='bx bxl-instagram'></i>
+            </a href>-->
+            <a href="https://www.instagram.com/lizeth_ruaro/" target="_blank">
+                <button type="button">Instagram</button>
+            </a>
+        </section>
+</footer>
+
+</html>

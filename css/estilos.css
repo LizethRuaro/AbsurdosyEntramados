@@ -1,0 +1,220 @@
+/* Estilos generales del cuerpo y encabezado */
+body {
+  font-family: 'Afacad', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 0;
+}
+
+header {
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(145, 6, 6, 0.5) 0%, rgba(51, 0, 0, 0.5)100%), url(../img/hielo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*
+.seccion_header {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}*/
+
+.seccion_header {
+  text-align: center; /* Agrega el punto y coma aquí */
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.seccion_general {
+  width: 95%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* Estilos de galerías */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+/* Estilos del menú */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+header {
+  background-color: #3f0000fd;
+  color: rgb(198, 1, 1);
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #2c000033;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: dotted;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #f60606;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles según sea necesario */
+  }
+}
+*/
+
+#audioPlayer {
+  background-color: red;
+  color: rgb(130, 1, 1);
+}
+h6 {
+  color: rgb(172, 2, 2);
+}
+h5 {
+  text-align: center;
+  color: rgb(172, 2, 2);
+}
+
+h3 {
+  color: rgb(255, 64, 64);
+}
+h4 {
+  color: rgb(136, 0, 0);
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+}
+
+/* Estilo del botón */
+button {
+  background-color: #ffffff; /* Color de fondo */
+  color: rgb(58, 0, 0); /* Color del texto */
+  padding: 10px 20px; /* Relleno interno del botón */
+  font-size: 12px; /* Tamaño de la fuente */
+  font-weight: bold;
+  border: 2px dotted #000; /* Sin borde */
+  cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+}
+
+/* Cambiar color de fondo al pasar el mouse sobre el botón */
+button:hover {
+  background-color: #960000;
+}
+
+#audioPlayer {
+  display: block;
+  margin: 0 auto;
+}
